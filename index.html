@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+    <title>Bank Account</title>
+</head>
+<body>
+    <div class="jaiz">
+    
+        <div class="topRow">
+            <h2 class="text-center text-danger">WELCOME TO SAM'S BANK</h2>
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div class="deposit">
+                        <h4>Deposit</h4>
+                        <h1>$<span id="currentDeposit">000</span></h1>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="withdraw">
+                        <h4>Withdraw</h4>
+                        <h1>$<span id="withdrawMony">000</span></h1>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 ">
+                    <div class="balance">
+                        <h4>Balance</h4>
+                        <h1>$<span id="currentBalance">000</span></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="depositWithdraw">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="loginArea">
+                        <h3>Deposit</h3>
+                        <input type="text" id="depositAmount" class="form-control" placeholder="Enter your deposit amount" required>
+                        <br>
+                        <button id="addDepositBtn" class="btn-success button">Enter</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="loginArea">
+                        <h3>Withdraw</h3>
+                        <input type="text" id="withdrawAdd" class="form-control" placeholder="Enter your withdraw amount" required>
+                        <br>
+                        <button id="withdrawBtn" class="btn-success button">Enter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

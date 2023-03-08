@@ -1,0 +1,44 @@
+body{
+    padding: 30px;
+}
+
+.loginArea{
+    border-radius: 5px;
+    box-shadow:4px 4px 8px grey;
+    padding: 30px 30px;
+    
+    margin: 20px;
+}
+.deposit{
+    background-color: rgb(50, 50, 255);
+    padding: 14px 20px;
+    border-radius: 12px;
+    color: white;
+    margin: 20px 20px;
+
+}
+.withdraw{
+    background-color: orange;
+    padding: 14px 20px;
+    border-radius: 12px;
+    color: white;
+    margin: 20px 20px;
+
+}
+.balance{
+    background-color:rgb(40, 217, 36);
+    padding: 14px 20px;
+    border-radius: 12px;
+    color: white;
+    margin: 20px 20px;
+
+}
+#nextPage{
+    display: none;
+
+}
+.button{
+    padding: 2px 5px;
+    font-size: 18px;
+    border-radius: 3px;
+}
