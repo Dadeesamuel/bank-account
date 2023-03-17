@@ -1,5 +1,6 @@
 body{
     padding: 30px;
+    background-color: skyblue;
 }
 
 .loginArea{
@@ -41,4 +42,7 @@ body{
     padding: 2px 5px;
     font-size: 18px;
     border-radius: 3px;
+}
+.jaiz{
+    display: none;
 }

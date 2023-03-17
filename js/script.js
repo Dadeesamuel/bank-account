@@ -80,7 +80,7 @@ function displayAccountDetails(userToDisplay) {
 
 function showAccount(accountId) {
     const account = user.findAccount(accountId);
-    $("#show-account").toggle();
+    $(".jaiz").toggle();
     $("#user-name").text(account.fullName());
     $("#user-account").html(account.id);
     $(".user-bank").html(account.bankName);
