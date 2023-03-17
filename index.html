@@ -11,10 +11,61 @@
     <title>Bank Account</title>
 </head>
 <body>
+
+
+    <!-- customers details -->
+    <form action="" class="customer-form container">
+        <h3 class="text-center">CUSTOMER DETAILS</h3>
+        <div>
+            <label for="surName">SURNAME:</label>
+            <input type="text" class="surname form-control">
+        </div>
+        <div>
+            <label for="firstName">FIRST NAME:</label>
+            <input type="text" class="firstname form-control">
+        </div>
+        <div>
+            <label for="address">ADDRESS:</label>
+            <input type="text" class="address form-control">
+        </div>
+        <div>
+            <label for="age">AGE:</label>
+            <input type="number" class="age form-control">
+        </div>
+        <div>
+            <label for="bank-name">BANK NAME:</label>
+            <select class="bank form-control">
+                <option value="">select bank</option>
+                <option value="access ">access</option>
+                <option value="zenith">zenith</option>
+                <option value="polaris">polaris</option>
+                <option value="stanbic">stanbic</option>
+                <option value="union">union</option>
+                <option value="loctus">lotus</option>
+                <option value="jaiz">jaiz</option>
+                <option value="GTB">GTB</option>
+            </select>
+        </div>
+        <div>
+            <label for="i-deposit">INITIAL DEPOSIT:</label>
+            <input type="number" class="i-deposit form-control">
+        </div>
+        <div class="text-center" style="padding: 30px;"><button type="submit">SUBMIT</button></div>
+
+    </form>
+
+
+
+
+
+    <!-- users deposit/withdrawal page -->
     <div class="jaiz">
+        <ol id="accounts">
+        </ol>
     
         <div class="topRow">
-            <h2 class="text-center text-danger">WELCOME TO SAM'S BANK</h2>
+            <h2 class="text-center text-danger">WELCOME TO <span class="user-bank"></span> BANK</h2>
+            <h3 style="padding-left: 50px;">Hi, <span id="user-name"></span> your account number is:  <span id="user-account"></span></h3>
             <div class="row">
                 <div class="col-md-4 ">
                     <div class="deposit">
@@ -25,7 +76,7 @@
                 <div class="col-md-4 ">
                     <div class="withdraw">
                         <h4>Withdraw</h4>
-                        <h1>$<span id="withdrawMony">000</span></h1>
+                        <h1>$<span id="currentWithdraw">000</span></h1>
                     </div>
                 </div>
     
@@ -36,29 +87,36 @@
                     </div>
                 </div>
             </div>
+            <div id="buttons"> </div>
         </div>
     
         <div class="depositWithdraw">
+            
             <div class="row">
-                <div class="col-md-6">
-                    <div class="loginArea">
-                        <h3>Deposit</h3>
-                        <input type="text" id="depositAmount" class="form-control" placeholder="Enter your deposit amount" required>
-                        <br>
-                        <button id="addDepositBtn" class="btn-success button">Enter</button>
+                
+                    <div class="col-md-6">
+                        <form action="" class="loginArea">
+                            <h3>Deposit</h3>
+                            <input type="number" id="depositAmount" class="form-control" placeholder="Enter your deposit amount" required>
+                            <br>
+                            <button type="submit" id="addDepositBtn" class="btn-success button">Enter</button>
+                        </form>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="loginArea">
-                        <h3>Withdraw</h3>
-                        <input type="text" id="withdrawAdd" class="form-control" placeholder="Enter your withdraw amount" required>
-                        <br>
-                        <button id="withdrawBtn" class="btn-success button">Enter</button>
+
+                
+                    <div class="col-md-6">
+                        <form action="" class="loginArea">
+                            <h3>Withdraw</h3>
+                            <input type="number" id="withdrawAmount" class="form-control" placeholder="Enter your withdraw amount" required>
+                            <br>
+                            <button type="submit" id="withdrawBtn" class="btn-success button" >Enter</button>
+                        </form>
                     </div>
-                </div>
+
+
             </div>
         </div>
     </div>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
 </body>
 </html>
